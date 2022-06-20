@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(237, 236, 236);
+}
+
+
+/* scroll bar start under here*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: blueviolet;
+    height: 200px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: blueviolet;
+}
+
+
+/* Scroll bar end above here*/
+
+
+/* Navigation Start Under Here */
+
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+}
+
+.navbrand {
+    font-size: 3rem;
+    color: red;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    width: 330px;
+    padding-left: 30px;
+    height: 65px;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+}
+
+.mainul {
+    display: flex;
+    align-self: center;
+}
+
+.mainli {
+    padding-right: 40px;
+}
+
+.mainlispe {
+    padding-right: 30px;
+}
+
+.mainul li a {
+    color: black;
+    font-size: 17px;
+    opacity: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 1s ease 0s;
+}
+
+.mainul>li>a {
+    color: black;
+    font-size: 17px;
+    opacity: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 1s ease 0s;
+}
+
+
+/*hover*/
+
+.mainli>a {
+    background: linear-gradient( to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), linear-gradient( to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.mainli>a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+.mainul>.mianli>a:active {
+    color: yellowgreen;
+}
+
+
+/* hover*/
+
+.mainli>a:hover {
+    opacity: 0.9;
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+    position: relative;
+    bottom: 3px;
+}
+
+.firstline {
+    position: relative;
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.secul {
+    display: none;
+    position: absolute;
+}
+
+.secli {
+    width: 200px;
+    padding: 15px 15px;
+    background-color: blanchedalmond;
+    border-bottom: 1px solid black;
+}
+
+.mainlispe:hover .secul {
+    display: block;
+}
+
+
+/* Navigation End Above Here */
+
+
+/* Main Start under here  */
+
+.mainsar {
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    position: relative;
+    top: 100px;
+    height: 160px;
+}
+
+.mainsarone {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 10px;
+}
+
+.mainsarhr {
+    margin: 0 auto;
+    width: 370px;
+    height: 2px;
+    border-width: 0px;
+    color: black;
+    background-color: black;
+}
+
+.mainsartwo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+
+/*we start main under here*/
+
+.main {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.picturesection {
+    width: 5%;
+    height: 600px;
+    display: inline-block;
+    position: absolute;
+    left: 0%;
+}
+
+.one {
+    height: 250px;
+    margin: 0 auto;
+    width: 65px;
+}
+
+.two {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+
+.three {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+
+.four {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+
+.five {
+    height: 250px;
+    width: 35px;
+}
+
+.picturesectiontwo {
+    width: 5%;
+    height: 600px;
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+}
+
+.containnavandhotitem {
+    width: 90%;
+    height: 600px;
+}
+
+.navsection {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+}
+
+.proul {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.proul li {
+    font-family: 'adam.cg_proregular', sans-serif;
+}
+
+.proul li>a {
+    color: black;
+    font-weight: 600;
+    transition: all 1s ease 0s;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.proul li>a:hover {
+    color: black;
+    font-weight: 600;
+    transition: all 1s ease 0s;
+    opacity: 1;
+    font-size: 20px;
+}
+
+
+/* start hover */
+
+.proli>a {
+    background: linear-gradient( to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), linear-gradient( to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.proli>a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+
+/* end hover */
+
+
+/* This is the start of card */
+
+.hotitem {
+    margin: 0 auto;
+    width: 95%;
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotitemone {
+    width: 33%;
+    height: 520px;
+    border: 1px solid black;
+}
+
+.hotitemtwo {
+    width: 33.5%;
+    height: 520px;
+}
+
+.details {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 1.5s ease 0s;
+    position: relative;
+    bottom: 110px;
+}
+
+.details:hover {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    opacity: 1;
+}
+
+.hotitemthree {
+    width: 33.5%;
+    height: 520px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.ee {
+    margin: 0 auto;
+    width: 170px;
+    height: 4px;
+    border-width: 0px;
+    color: black;
+    background-color: black;
+    position: relative;
+    bottom: 70px;
+}
+
+.pp {
+    margin: 0 auto;
+    width: 170px;
+    height: 4px;
+    border-width: 0px;
+    color: black;
+    background-color: black;
+    position: relative;
+    bottom: 150px;
+}
+
+.promotionitem {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* This is the end of card */
+
+
+/*this is the end main above here*/
+
+
+/* Main End Above Here */
+
+
+/* Footer Start Under Here */
+
+.ftul {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.ftli>a {
+    color: white;
+    font-size: 10px;
+}
+
+.allimg {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    position: relative;
+    left: 580px;
+    top: 10px;
+}
+
+.ftsarone {
+    color: white;
+    position: relative;
+    text-align: center;
+    bottom: 40px;
+    width: 100%;
+    top: 25px;
+}
+
+.ftsartwo {
+    color: white;
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    top: 45px;
+}
+
+.fthra {
+    margin: 0 auto;
+    width: 470px;
+    height: 2px;
+    border-width: 0px;
+    color: white;
+    background-color: white;
+    position: relative;
+    top: 70px;
+}
+
+.ftsarthree {
+    color: white;
+    top: 90px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.img1 {}
+
+
+/* Footer End Above Here */
